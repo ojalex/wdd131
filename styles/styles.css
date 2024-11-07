@@ -1,104 +1,121 @@
-* {
-  box-sizing: border-box
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Horizontal Ruler */
+hr.small {
+  height: 1px; /* Adjust the height of the horizontal ruler*/
+  width: 90%;  /* Adjust the width */
+  background-color: black; /* Change the color if needed */
+  border: none; /* Remove the default border */
+}
+/* Kenya Flag */
+img.flag {
+  width: 150px; /* Adjust the width of the Fenyan flag */
+  height: 70px; /* Maintain aspect ratio */
+  border: 1px solid black; /* Add a border */
+}
+img.mypic {
+  width: 150px; /* Adjust the width of the Fenyan flag */
+  height: 200px; /* Maintain aspect ratio */
+  border: 1px solid black; /* Add a border */
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+/* Navigation style */
+h2.ttbg {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  background-color: #16485f;
 }
-
-
-/* Container formating */
-.container {
-  border: 2px solid #ccc;
-  background-color: #eee;
-  border-radius: 5px;
-  padding: 16px;
-  margin: 16px 0
+.yellow{
+  color: yellow;
 }
+/* Style the navigation menu */
 
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
-.container img {
-  float: left;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-.container span {
-  font-size: 20px;
-  margin-right: 15px;
-}
-
-@media (max-width: 500px) {
-  .container {
-      text-align: center;
-  }
-
-  .container img {
-      margin: auto;
-      float: none;
-      display: block;
-  }
-}
-
-/* Container formating */
-
-/* center the website images */
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* center the website images */
-/* Navigation bar settings */
 .navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: ;
-  top: 0;
   width: 100%;
+  background-color: #555;
+  overflow: auto;
 }
 
 .navbar a {
   float: left;
-  display: block;
+  padding: 12px;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
 }
 
 .navbar a:hover {
-  background: #ddd;
-  color: black;
+  background-color: #000;
 }
 
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px;
-  /* Used in this example to enable scrolling */
-}
-
-/* Navigation bar settings */
-/* Shows active menu bar */
 .navbar a.active {
-  background-color: red;
+  background-color: #4a8a53;
 }
 
-/* Shows active menu bar */
-/* footer format */
-footer {
+h2.center{
   text-align: center;
-  padding: 3px;
-  background-color: black;
+}
+.bgnaviblue{
+  background-color: #16485f;
   color: white;
+  padding: 5px;
+  text-align: center;
 }
 
-/* footer format */
+/* Grid Layout */
+.item1 { grid-area: about;}
+.item2 { grid-area: pic;}
+.item3 { grid-area: me;}
+.item4 { grid-area: nai;}
+.item5 { grid-area: flag;}
+.item6 { grid-area: note;}
+.item7 { grid-area: ke;}
+.item8 { grid-area: web;}
+.item9 { grid-area: sch;}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'about about about about web web'
+    'me me me pic sch sch'
+    'nai nai nai nai sch sch'
+    'flag ke ke ke sch sch'
+    'note ke ke ke sch sch'
+    ;
+  gap: 8px;
+  background-color: white;
+  padding: 20px;
+  
+}
+
+.grid-container > div {
+  background-color: white;
+  padding: 10;
+  font-size: 19px;
+  
+}
+/* footer */
+footer {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  background-color: #16485f;
+}
+/*----------------------------------------------------------------------------*/
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
