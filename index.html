@@ -2,24 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, by Alex Otieno Juma, Keyword OJ Alex, about OJ Alex">
+    <meta name="keywords" content="Alex Juma, About OJ Alex, About Alex Juma">
+    <meta name="author" content="Alex Juma">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OJ Alex</title>
-    <link rel="stylesheet" href="styles/styles.css"> 
+    <link rel="stylesheet" href="styles/base.css"> 
+    <script src="scripts/getdates.js" defer="defer"></script>
    
 </head>
 <body>
-    <h2 class="ttbg">WDD 131: Dynamic Web Fundermentals - <span class="yellow">OJ Alex</span></h1>
-
+    <header>
+        <h2 class="ttbg">WDD 131 - Dynamic Web Fundermentals - <span class="yellow">Alex Otieno Juma</span></h2>
+    
     <!-- The navigation menu -->
-     <div class="navbar">
-         <a class="active" href="#">LinkedIn</a>
-         <a href="#">I-Learn</a>
-         <a href="#">Scripture</a>
-         <a href="https://ojalex.github.io/wdd131/">Final Project</a>
-     </div>
+     <nav class="navbar">
+         <a class="active" href="https://www.linkedin.com/in/alex-juma-50031b74/">LinkedIn</a>
+         <a href="https://byui.instructure.com/">I-Learn</a>
+         <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/philip/4?lang=eng">Scripture</a>
+         <a href="#">Final Project</a>
+     </nav>
 
+    </header>
      <!------------------------------------------------------------------------------------------>
-     <div class="grid-container">
+     <main>
+        
+        <div class="grid-container">
         <div class="item1" >
             <h2 class="bgnaviblue">About Me</h2>
         </div>
@@ -78,11 +86,12 @@
             </ul>
         </div>
     </div>
+    </main>
     <!------------------------------------------------------------------------------------->
     <footer>
-        <p>&copy2024 OJ Alex Otieno Juma Kenya</p>
-        <p class="yellow">Last modification: 07/11/2024 11:33:40</p>
+        <span id="currentyear"></span> <br>
+        <p class="yellow" id="lastModified"></p>
     </footer>
-    
+   
 </body>
 </html>
