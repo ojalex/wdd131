@@ -17,32 +17,8 @@
         height: 80%;
      }
   /* Grid Layout */
-  .item1 { grid-area: pic1;}
-  .item2 { grid-area: pic2;}
-  .item3 { grid-area: pic3;}
-  .item4 { grid-area: pic4;}
-  .item5 { grid-area: pic5;}
-  .item6 { grid-area: pic6;}
-  .item7 { grid-area: pic7;}
-  .item8 { grid-area: pic8;}
-  .item9 { grid-area: pic9;}
-  
-  
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'pic1'
-      'pic2'
-      'pic3'
-      'pic4'
-      'pic5'
-      'pic6'
-      'pic7'
-      'pic8'
-      'pic9'
-      
-      ;
-    gap: 4px;
-    padding: 5px;
+  main{
+    grid-template-columns: 1fr;
+}
 }
 }
