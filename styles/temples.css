@@ -1,0 +1,83 @@
+
+body {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img{
+    width: 90%;
+    height: 65%;
+ }
+.center{
+    text-align: center;
+}
+
+
+
+/*------------Navigation-----------------*/
+.topnav {
+    overflow: hidden;
+    background-color: rgb(62, 7, 114);
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border: solid 1px green;
+  }
+  
+  .topnav a.temple-text {
+   
+    color: white;
+    float: left;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+/*-----------------Grid Layout-----------------------*/
+/* Grid Layout */
+.item1 { grid-area: pic1;}
+.item2 { grid-area: pic2;}
+.item3 { grid-area: pic3;}
+.item4 { grid-area: pic4;}
+.item5 { grid-area: pic5;}
+.item6 { grid-area: pic6;}
+.item7 { grid-area: pic7;}
+.item8 { grid-area: pic8;}
+.item9 { grid-area: pic9;}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'pic1 pic2 pic3'
+    'pic4 pic5 pic6'
+    'pic7 pic8 pic9'
+    
+    ;
+  gap: 4px;
+  padding: 20px;
+  
+}
+
+/* footer */
+footer {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-color: rgb(62, 7, 114);
+  }
