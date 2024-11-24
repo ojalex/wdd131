@@ -1,5 +1,12 @@
+/* Define global CSS variables in :root */
+:root {
+    --primary-color: red;    /* Blue */
+    --secondary-color: green;  /* Green */
+  }
+
+
 header{
-    background-color: red;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     height: 90px;
@@ -40,7 +47,7 @@ strong{
     position: relative;
     text-align: center;
     color: black;
-    background-color: green;
+    background-color: var(--secondary-color);
  
   }
   .top-left {
@@ -68,7 +75,7 @@ strong{
     margin: 8px;
   }
   div h2{
-    background-color: green;
+    background-color: var(--secondary-color);
     text-align: left;
     padding: 15px;
     color: white;
