@@ -7,20 +7,74 @@ header{
 h1{
     padding: 20px;
 }
-br{
-    background-color: green;
-}
+
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  footer{
+.top-left, .bottom-right{
+    display: block;
+    background-color: white;
+    padding: 20px;
+    border: solid 1px rgb(248, 246, 246);
+    text-align: center;
+    
+}
+.bottom-right img{
+    width: 55px;
+}
+footer{
     background-color: red;
     color: white;
     text-align: center;
     height: 90px;
 }
-.container{
-    background-color: aliceblue;
+strong{
+    text-align: right;
+}
+
+@media  screen and (min-width: 500px) {
+  
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: green;
+ 
+  }
+  .top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 8px;
+  }
+  .bottom-right img{
+    width: 37px;
+  }
+
+  .bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 8px;
+  }
+  div h2{
+    background-color: green;
+    text-align: left;
+    padding: 15px;
+    color: white;
+
+
+  }
+
+
 }
