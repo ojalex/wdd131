@@ -12,10 +12,7 @@
       display: block;
       text-align: left;
     }
-    img{
-        width: 90%;
-        height: 50%;
-     }
+
   /* Grid Layout */
   main{
     grid-template-columns: 1fr;

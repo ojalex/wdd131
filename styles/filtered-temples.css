@@ -5,10 +5,21 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
+section {
+  display: inline-block;
+  border: 2px solid grey; /* Border with color */
+  padding: 3px; /* padding between border and image */
+  background-color: rgb(224, 224, 224);
+  margin: 20px;
+}
 img{
     width: 90%;
-    height: 230px;
+    height: 250px;
+    
+    display: inline-block;
+    border: 1px solid rgb(62, 7, 114); /* Border with color */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4); /* Shadow with offset and blur */
+    padding: 5px; /* Optional padding between border and image */
  }
 .center{
     text-align: center;
@@ -55,6 +66,8 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
+ 
+    
 }
 section{
     padding: 1rem;
