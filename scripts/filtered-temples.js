@@ -126,7 +126,7 @@ function extractYear(dateString) {
 const oldLink = document.querySelector("#after");
 oldLink.addEventListener("click", () => {
   // createTempleCard(temples.filter(temple => extractYear(temple.dedicated) > 2000)); **********this one too works*****
-  const filteredTemples = temples.filter(temple => extractYear(temple.dedicated) < 2000);
+  const filteredTemples = temples.filter(temple => extractYear(temple.dedicated) > 2000);
   createTempleCard(filteredTemples); 
 });
 
