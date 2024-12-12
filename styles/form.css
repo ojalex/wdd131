@@ -6,7 +6,7 @@
     src : url(https://fonts.gstatic.com/s/eduauvicwantpre/v1/f0Xc0fWk-t0rbG8Ycr-t55aG0elTWbFeXaYI98CnuNLeosIyJmkwrw.ttf) format('truetype');
     }
 body {
-    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-family: 'Edu AU VIC WA NT Pre';
     background-color: white;
     color: black;
     padding: 20px;
