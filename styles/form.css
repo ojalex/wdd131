@@ -1,4 +1,10 @@
-
+@font-face {
+    font-family : 'Edu AU VIC WA NT Pre';
+    font-style : normal;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/eduauvicwantpre/v1/f0Xc0fWk-t0rbG8Ycr-t55aG0elTWbFeXaYI98CnuNLeosIyJmkwrw.ttf) format('truetype');
+    }
 body {
     font-family: "Edu AU VIC WA NT Pre", cursive;
     background-color: white;
