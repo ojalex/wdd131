@@ -32,3 +32,10 @@ services.forEach(service => {
     option.textContent = service.name;  // Use the product name as the visible text
     serviceSelect.appendChild(option);  // Append the option to the select element
 });
+
+function mobile() {
+  document.getElementById("show").innerHTML = "Mobile Number: +254722164299";
+}
+function mail() {
+  document.getElementById("show").innerHTML = "E-Mail: juma@gmail.com";
+}
